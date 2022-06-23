@@ -4,7 +4,7 @@ function Home() {
   return (
     <div>
       <NavLink to ="/about">
-        <button>Navigate to about</button>
+        <button>Navigate to about saala</button>
       </NavLink>
     </div>
   );
