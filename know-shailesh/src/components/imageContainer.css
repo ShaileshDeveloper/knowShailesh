@@ -1,0 +1,85 @@
+.image__text__container {
+  display: flex;
+}
+
+.image {
+  height: 300px;
+  width: 350px;
+  position: relative;
+  top: 100px;
+  display: block;
+  box-sizing: border-box;
+  background-color: #8989bb;
+  background-image: linear-gradient(90deg, #8989bb 0%, #a5a4cb 34%);
+  border-top-right-radius: 50%;
+  filter: opacity(0.7) drop-shadow(0 0 0 #8989bb);
+}
+.image1 {
+  height: 400px;
+  width: 350px;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 100px;
+}
+
+.image__container {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  height: 500px;
+}
+.text__container {
+  flex-basis: 50%;
+  color: black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 150px;
+}
+.heading__name {
+  font-size: 56px;
+  font-weight: 600;
+  color: black;
+  font-family: "Lato", sans-serif;
+}
+.shailesh__description {
+  font-size: 19px;
+  font-weight: 400;
+  color: black;
+}
+
+.chat__button {
+  background-color: #5351e0;
+  color: #f0f0f0;
+  height: 40px;
+  width: 120px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05cm;
+}
+.about__button {
+  background-color: #f0f0f0;
+  color: #5351e0;
+  height: 40px;
+  width: 80px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05cm;
+  border: 3px solid #5351e0;
+  margin-left: 30px;
+}
+.button__container {
+  display: flex;
+}
