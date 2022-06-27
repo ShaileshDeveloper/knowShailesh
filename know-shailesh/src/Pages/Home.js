@@ -1,11 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import ImageContainer from "../components/imageContainer";
 function Home() {
   return (
     <div>
-      <NavLink to ="/about">
-        <button>Navigate to about sita</button>
-      </NavLink>
+      <Navbar />
+      <ImageContainer />
     </div>
   );
 }

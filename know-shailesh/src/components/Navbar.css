@@ -1,0 +1,26 @@
+.navbar__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fefefe;
+  font-weight: 500;
+  height: 80px;
+}
+.logo__container {
+  font-family: "Lato", sans-serif;
+  color: #767579;
+
+  font-size: 22px;
+  font-weight: 800;
+}
+.nav__list__items {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+
+.home__container {
+  color: #767579;
+}
