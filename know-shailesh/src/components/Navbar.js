@@ -12,9 +12,9 @@ function Navbar() {
           </div>
         </div>
         <div className="nav__list__items">
-          <div className="home__container">Home</div>
-          <div className="home__container">About</div>
-          <div className="home__container">Settings</div>
+          <div className="home__container">HOME</div>
+          
+          <div className="home__container">BLOGS</div>
         </div>
       </div>
     </>

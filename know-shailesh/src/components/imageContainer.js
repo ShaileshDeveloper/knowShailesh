@@ -24,7 +24,11 @@ function ImageContainer() {
             <p>I write blogs around web-technologies.</p>
           </div>
           <div className="button__container">
-            <button className="chat__button">LET'S CHAT</button>
+            <a style={{textDecoration:"none"}} href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=shailesh.dev296@gmail.com"
+                target="_blank">
+                    <button className="chat__button">LET'S CHAT</button>
+                </a>
+            
             <button className="about__button">ABOUT</button>
           </div>
         </div>
