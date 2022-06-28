@@ -29,7 +29,7 @@ function ImageContainer() {
                     <button className="chat__button">LET'S CHAT</button>
                 </a>
             
-            <button className="about__button">ABOUT</button>
+            <button className="about__button">SEE PROJECTS</button>
           </div>
         </div>
       </div>

@@ -14,6 +14,7 @@ function Navbar() {
         <div className="nav__list__items">
           <div className="home__container">HOME</div>
           
+          <div className="home__container">PROJECTS</div>
           <div className="home__container">BLOGS</div>
         </div>
       </div>

@@ -15,7 +15,7 @@ function AboutMe() {
             <p>
               I am a full-stack developer , who loves to build great user
               interfaces <br /> and built scalable applications. I write blogs
-              around web-technologies <br /> and productivity .
+              around web-techno <br />logies  and productivity .
             </p>
             <p>
               Most of the time of my day goes in exploring new technologies and
@@ -23,7 +23,7 @@ function AboutMe() {
             </p>
             <p>
               The current technologies I work with mostly are React, Redux for
-              Frontend , <br /> Node.js, Express.js for Backend and MongoDB for
+              <br /> Frontend , Node.js, Express.js for Backend and MongoDB for  <br />
               managing Database .
             </p>
           </div>
