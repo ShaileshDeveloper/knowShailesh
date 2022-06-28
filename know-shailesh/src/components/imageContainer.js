@@ -2,6 +2,8 @@ import React from "react";
 import ProfilePicture from "./profilepicture.png";
 import "./imageContainer.css";
 
+
+
 function ImageContainer() {
   return (
     <>
@@ -16,13 +18,13 @@ function ImageContainer() {
           <div className="shailesh__description">
             <p>I built Applications.</p>
             <p>
-              I am a web-developer,skilled in designing responsive <br /> and scalable
-              web-applications .
+              I am a web-developer,skilled in designing responsive <br /> and
+              scalable web-applications .
             </p>
             <p>I write blogs around web-technologies.</p>
           </div>
           <div className="button__container">
-            <button className="chat__button">LET'S  CHAT</button>
+            <button className="chat__button">LET'S CHAT</button>
             <button className="about__button">ABOUT</button>
           </div>
         </div>

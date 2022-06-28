@@ -9,7 +9,13 @@
 .logo__container {
   font-family: "Lato", sans-serif;
   color: #767579;
-
+  display: flex;
+  font-size: 22px;
+  font-weight: 800;
+}
+.logo__container__name {
+  font-family: "Lato", sans-serif;
+  color: #767579;
   font-size: 22px;
   font-weight: 800;
 }
@@ -23,4 +29,13 @@
 
 .home__container {
   color: #767579;
+}
+.home__container {
+  color: #767579;
+}
+.rectangle__icon {
+  height: 15px;
+  width: 25px;
+  margin-top: 7px;
+  transform: rotate(90deg);
 }

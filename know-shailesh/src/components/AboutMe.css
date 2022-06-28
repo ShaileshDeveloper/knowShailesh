@@ -1,0 +1,44 @@
+.about__me__details {
+  background-color: #f7f5ff;
+  height: 400px;
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+}
+.about__me__text__container {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__me__details__container {
+  flex-basis: 50%;
+  font-family: "Lato", sans-serif;
+  
+}
+.heading__text__about {
+  font-size: 40px;
+  font-weight: 700;
+}
+.vector__image1 {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top:100px;
+  left:50px
+}
+.vector__image2 {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top:200px;
+  left: 140px;
+}
+.vector__image3 {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  left: 220px;
+  top: 100px;
+}
