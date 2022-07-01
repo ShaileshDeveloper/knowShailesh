@@ -1,6 +1,7 @@
 import React from "react";
 import Rectangle from "./reactangle.png";
 import "./Navbar.css";
+import Hamburger from "./hamburger.png"
 function Navbar() {
   return (
     <>
@@ -13,9 +14,11 @@ function Navbar() {
         </div>
         <div className="nav__list__items">
           <div className="home__container">HOME</div>
-          
           <div className="home__container">PROJECTS</div>
           <div className="home__container">BLOGS</div>
+        </div>
+        <div className="hamburger__icon">
+              <img src={Hamburger} alt="menu"/>
         </div>
       </div>
     </>

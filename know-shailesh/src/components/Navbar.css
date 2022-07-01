@@ -10,7 +10,7 @@
   font-family: "Lato", sans-serif;
   color: #767579;
   display: flex;
-  font-size: 22px;
+  font-size: 1.5vw;
   font-weight: 800;
 }
 .logo__container__name {
@@ -29,13 +29,43 @@
 
 .home__container {
   color: #767579;
+  font-size: 1.1vw
 }
 .home__container {
   color: #767579;
 }
 .rectangle__icon {
-  height: 15px;
-  width: 25px;
-  margin-top: 7px;
+  height: 1%;
+  width: 13%;
+  margin-top: 2px;
   transform: rotate(90deg);
+}
+.hamburger__icon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav__list__items {
+    display: none;
+  }
+
+  .hamburger__icon {
+    display: block;
+    width: 15px;
+    height: 25px;
+  }
+  .navbar__container {
+    width: 100vw;
+  }
+  .logo__container {
+    font-size: 5vw;
+    padding-right: 50px;
+  }
+
+  .rectangle__icon {
+    height: 15px;
+    width: 20px;
+    margin-top: 4px;
+    
+  }
 }

@@ -5,9 +5,10 @@ import ImageContainer from "../components/imageContainer";
 import AboutMe from "../components/AboutMe";
 import Form from "../components/form";
 import Footer from "../components/Footer";
+import "./home.css"
 function Home() {
   return (
-    <div>
+    <div className="home__page__container">
       <Navbar />
       <ImageContainer />
       <AboutMe />
