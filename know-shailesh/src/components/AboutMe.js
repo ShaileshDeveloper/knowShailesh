@@ -27,7 +27,7 @@ function AboutMe() {
             <p className="about__me__sub__text">
               The current technologies I work with mostly are React, Redux for
               <br className="only-desktop" /> Frontend , Node.js, Express.js for
-              Backend and MongoDB for <br className="only-desktop"  />
+              Backend and MongoDB for <br className="only-desktop" />
               managing Database .
             </p>
           </div>
