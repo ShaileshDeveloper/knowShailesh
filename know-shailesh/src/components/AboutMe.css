@@ -10,12 +10,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 0px;
+  padding: 0px 20px;
 }
 
 .about__me__details__container {
   flex-basis: 50%;
-  font-family: "Lato", sans-serif;
-  
+  font-family: "Montserrat", sans-serif;
 }
 .heading__text__about {
   font-size: 40px;
@@ -25,14 +26,14 @@
   height: 150px;
   width: 150px;
   position: relative;
-  top:100px;
-  left:50px
+  top: 100px;
+  left: 50px;
 }
 .vector__image2 {
   height: 150px;
   width: 150px;
   position: relative;
-  top:200px;
+  top: 200px;
   left: 140px;
 }
 .vector__image3 {
@@ -41,4 +42,28 @@
   position: relative;
   left: 220px;
   top: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about__me__details {
+    width: 100vw;
+    margin-top: 0px;
+    align-items: center;
+  }
+  .about__me__text__container {
+    width: 100vw;
+    flex-basis: auto;
+  }
+
+  .heading__text__about {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  .about__me__sub__text {
+    font-weight: 500;
+    font-size: 22px;
+  }
+  .about__me__details {
+    height: fit-content;
+  }
 }
