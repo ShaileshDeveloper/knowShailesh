@@ -1,6 +1,7 @@
 import React from "react";
 import "./form.css";
 import EmailIcon from "./comment-alt.svg";
+import Hiring from "./hire.jpg"
 function Form() {
   return (
     <>

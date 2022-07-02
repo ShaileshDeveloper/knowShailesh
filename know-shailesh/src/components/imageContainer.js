@@ -14,7 +14,7 @@ function ImageContainer() {
           </div>
         </div>
         <div className="text__container">
-          <div className="heading__name">Hey There , <br className="only-phone"/> I'm Shailesh</div>
+          <div className="heading__name">Hey There  I'm Shailesh</div>
           <div className="shailesh__description">
             <p className="heading__subtext">I build beautiful and  scalable <br className="only-phone"/> full stack applications.</p>
             <p className="only-desktop subtext">
