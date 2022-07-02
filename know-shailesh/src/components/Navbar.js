@@ -8,7 +8,7 @@ function Navbar() {
       <div className="navbar__container">
         <div className="logo__container">
           <img className="rectangle__icon" src={Rectangle}/>
-          <div>
+          <div style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
           Shailesh Pandey
           </div>
         </div>

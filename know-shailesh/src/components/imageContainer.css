@@ -48,7 +48,7 @@
   font-weight: 600;
   color: black;
   font-family: "Montserrat", sans-serif;
-  animation: typing 6s steps(22) infinite;
+  animation: typing 4s steps(22) infinite;
   white-space: nowrap;
   overflow: hidden;
   width: 24ch;
@@ -162,7 +162,7 @@
     font-family: "Montserrat", sans-serif;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s;
+    animation: typing 3s;
   }
 
   .image {
@@ -202,9 +202,7 @@
     0%{
       padding-left: 0px;
     }
-    50%{
-      padding-left: 20px;
-    }
+   
     100%{
       padding-left: 40px;
     }
