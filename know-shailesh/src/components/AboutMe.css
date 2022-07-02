@@ -23,7 +23,6 @@
   font-size: 3vw;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
-
 }
 .vector__image1 {
   height: auto;
@@ -47,9 +46,8 @@
   top: 20%;
 }
 .about__me__sub__text {
-font-size: 1vw;
-font-weight: 500;
-
+  font-size: 1vw;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 600px) {
@@ -62,7 +60,6 @@ font-weight: 500;
     width: 100vw;
     flex-basis: auto;
   }
- 
 
   .heading__text__about {
     text-align: center;
@@ -71,11 +68,11 @@ font-weight: 500;
   }
   .about__me__sub__text {
     font-weight: 400;
-<<<<<<< HEAD
+
     font-size: 16px;
-=======
-    font-size: 20px;
->>>>>>> 86a08fb855a80a834e2df1865893164f44d1e2e0
+
+    
+
     background-color: #f0f0f0;
     padding: 10px 15px;
   }
@@ -84,4 +81,3 @@ font-weight: 500;
     padding: 0;
   }
 }
-
