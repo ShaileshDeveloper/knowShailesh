@@ -15,7 +15,7 @@ function AboutMe() {
             <p className="about__me__sub__text">
               I am a full-stack developer , who loves to build great user
               interfaces <br className="only-desktop" /> and built scalable
-              applications. I write blogs around web-techno{" "}
+              applications. I write blogs around web-techno
               <br className="only-desktop" />
               logies and productivity .
             </p>
