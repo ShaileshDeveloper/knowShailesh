@@ -77,3 +77,27 @@ font-weight: 500;
     height: fit-content;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .about__me__details {
+    width: 100vw;
+    margin-top: 0px;
+    align-items: center;
+  }
+  .about__me__text__container {
+    width: 100vw;
+    flex-basis: auto;
+  }
+
+  .heading__text__about {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  .about__me__sub__text {
+    font-weight: 500;
+    font-size: 22px;
+  }
+  .about__me__details {
+    height: fit-content;
+  }
+}
