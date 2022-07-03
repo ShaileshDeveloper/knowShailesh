@@ -10,8 +10,9 @@ function ImageContainer() {
       <div className="image__text__container">
         <div className="image__container">
           <div className="image">
-            <img className="image1" src={ProfilePicture} />
           </div>
+          <img className="image1" src={ProfilePicture} />
+
         </div>
         <div className="text__container">
           <div className="heading__name">Hey There <br className="only-phone"/> I'm Shailesh</div>
