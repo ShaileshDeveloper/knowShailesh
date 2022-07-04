@@ -88,9 +88,15 @@ function Navbar() {
           <img style={{ width: "40px", height: "40px" }} src={Cross} alt="" />
         </div>
         <div>
-          <div className="mobile__navbar__items">HOME</div>
-          <div className="mobile__navbar__items">PROJECTS</div>
-          <div className="mobile__navbar__items">BLOGS</div>
+          <Link style={{textDecoration:"none"}} to="/">
+            <div className="mobile__navbar__items">HOME</div>
+          </Link>
+          <Link style={{textDecoration:"none"}} to="/projects">
+            <div className="mobile__navbar__items">PROJECTS</div>
+          </Link>
+          <Link style={{textDecoration:"none"}} to="/blogs">
+            <div className="mobile__navbar__items">BLOGS</div>
+          </Link>
         </div>
       </div>
     </>
