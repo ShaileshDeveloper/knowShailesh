@@ -31,12 +31,9 @@
   color: #767579;
   font-size: 1.1vw;
   cursor: pointer;
+  transition: .2s;
 }
-.home__container:hover {
-  font-size: 1.16vw;
-  transition: .1s;
-  color:#228be6
-}
+
 .rectangle__icon {
   height: 1%;
   width: 13%;
