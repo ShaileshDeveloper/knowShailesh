@@ -4,8 +4,11 @@ import "./Navbar.css";
 import Hamburger from "./hamburger.png";
 import Cross from "./cross.png";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 function Navbar() {
   const [clicked, setClicked] = useState(false);
+  let { pathname } = useLocation();
+  let path = pathname.split("/")[1];
   return (
     <>
       <div className="navbar__container">
@@ -22,14 +25,43 @@ function Navbar() {
           </div>
         </div>
         <div className="nav__list__items">
-          <Link style={{ textDecoration: "none" }} to="/">
-            <div className="home__container">HOME</div>
+          <Link
+            style={{
+              textDecoration: "none",
+            }}
+            to="/"
+          >
+            <div
+              className="home__container"
+              style={{
+                color: path === "" ? "#228be6" : "#767579",
+                fontSize: path === "" ? "1.2vw" : "1.1vw",
+              }}
+            >
+              HOME
+            </div>
           </Link>
           <Link style={{ textDecoration: "none" }} to="/projects">
-            <div className="home__container">PROJECTS</div>
+            <div
+              className="home__container"
+              style={{
+                color: path === "projects" ? "#228be6" : "#767579",
+                fontSize: path === "projects" ? "1.2vw" : "1.1vw",
+              }}
+            >
+              PROJECTS
+            </div>
           </Link>
           <Link style={{ textDecoration: "none" }} to="/blogs">
-            <div className="home__container">BLOGS</div>
+            <div
+              className="home__container"
+              style={{
+                color: path === "blogs" ? "#228be6" : "#767579",
+                fontSize: path === "blogs" ? "1.2vw" : "1.1vw",
+              }}
+            >
+              BLOGS
+            </div>
           </Link>
         </div>
         <div className="hamburger__icon" onClick={() => setClicked(true)}>
