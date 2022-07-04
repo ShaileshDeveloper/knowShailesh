@@ -5,7 +5,7 @@ function Card({ item }) {
   return (
     <>
       <div className="card">
-        <div className="card__heading">{item.projectName}</div>
+        <div className="card__heading"> {item.id}. {item.projectName}</div>
 
         <div className="card__desc">{item.projectDescription}</div>
         <div className="buttons__container">

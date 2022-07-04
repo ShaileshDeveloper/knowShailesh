@@ -3,6 +3,7 @@ import Rectangle from "./reactangle.png";
 import "./Navbar.css";
 import Hamburger from "./hamburger.png";
 import Cross from "./cross.png";
+import { Link } from "react-router-dom";
 function Navbar() {
   const [clicked, setClicked] = useState(false);
   return (
@@ -21,9 +22,15 @@ function Navbar() {
           </div>
         </div>
         <div className="nav__list__items">
-          <div className="home__container">HOME</div>
-          <div className="home__container">PROJECTS</div>
-          <div className="home__container">BLOGS</div>
+          <Link style={{ textDecoration: "none" }} to="/">
+            <div className="home__container">HOME</div>
+          </Link>
+          <Link style={{ textDecoration: "none" }} to="/projects">
+            <div className="home__container">PROJECTS</div>
+          </Link>
+          <Link style={{ textDecoration: "none" }} to="/blogs">
+            <div className="home__container">BLOGS</div>
+          </Link>
         </div>
         <div className="hamburger__icon" onClick={() => setClicked(true)}>
           <img src={Hamburger} alt="menu" />
