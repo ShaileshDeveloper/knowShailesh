@@ -30,9 +30,12 @@
 .home__container {
   color: #767579;
   font-size: 1.1vw;
+  cursor: pointer;
 }
-.home__container {
-  color: #767579;
+.home__container:hover {
+  font-size: 1.16vw;
+  transition: .1s;
+  color:#228be6
 }
 .rectangle__icon {
   height: 1%;

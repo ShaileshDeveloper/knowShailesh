@@ -8,14 +8,22 @@ import Footer from "../components/Footer";
 function Projects() {
   return (
     <>
-      <div style={{display:"flex",flexDirection:"column" }}>
+      <div style={{ display: "flex", flexDirection: "column" }}>
         <Navbar />
-        <div style={{alignSelf:"center" ,display:"flex",alignItems:"center",flexDirection:"column"}} className="card__container">
-          {projectData.map(item => <>
-          <Card item={item}/>
-            
-          </> )}
-          
+        <div
+          style={{
+            alignSelf: "center",
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+          className="card__container"
+        >
+          {projectData.reverse().map((item) => (
+            <>
+              <Card item={item} />
+            </>
+          ))}
         </div>
         <Footer />
       </div>
