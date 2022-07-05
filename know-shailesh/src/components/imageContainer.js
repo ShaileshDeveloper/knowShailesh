@@ -17,13 +17,13 @@ function ImageContainer() {
           </div>
           <div className="shailesh__description">
             <p className="heading__subtext">
-              I build beautiful, scalable, <br className="only-phone" />
-              <span className="only-desktop"> and high performance</span>
-              <br className="only-desktop"/> full-stack applications.
+              I build beautiful, scalable, <br className="only-phone" /> and
+              high performance
+              <br /> full-stack applications.
             </p>
             <p className="only-desktop subtext">
               I am specialized in creating and designing sleek and <br />{" "}
-              premium user interfaces with help of React .
+              premium user interfaces with help of React . 
             </p>
             <p className="only-desktop subtext">
               Read my blogs around web-technologies.
