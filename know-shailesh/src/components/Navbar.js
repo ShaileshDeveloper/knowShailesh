@@ -71,9 +71,10 @@ function Navbar() {
       <div
         style={{
           transition: clicked ? "0.3s ease" : "0.3s ease",
-          height: clicked ? "280px" : "0px",
+          height: clicked ? "240px" : "0px",
           opacity: clicked ? "1" : "0",
           overflow: clicked ? "visible" : "hidden",
+          backgroundColor: "#f5f5f5"
         }}
         className="mobile__navbar"
       >
