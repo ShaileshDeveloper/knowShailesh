@@ -7,7 +7,7 @@ function Form() {
       <div className="form__container__section">
         <div className="form__container">
           <div>
-            <p className="hire__text">LOOKING  TO HIRE .</p>
+            <div className="hire__text">LOOKING TO HIRE .</div>
             <div className="email__text__container">
               <a
                 className="email__link"
@@ -17,6 +17,15 @@ function Form() {
                 Let's Connect
               </a>
               <img className="icon__email" src={EmailIcon} />
+            </div>
+            <div style={{
+              display:"flex",
+              justifyContent:"space-between",
+              alignItems:"center",
+              padding:"0px 10px"
+            }}>
+              <div className="phone__number">8095117793</div>
+              <div className="email__id">shailesh.dev296@gmail.com</div>
             </div>
           </div>
         </div>

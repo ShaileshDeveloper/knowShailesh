@@ -21,7 +21,7 @@ margin-top: 30px;
 
 .hire__text{
   color: black;
-  height: 40px;
+  height: 60px;
   font-size: 22px;
   border: none;
   display: flex;
@@ -64,6 +64,20 @@ margin-top: 30px;
    justify-content: center;
    font-size: 18px;
    transition: border-color 0.66s ease-out, font-size 0.3s ease-out;
+}
+.phone__number{
+ color: black;
+ font-weight :600;
+ margin-top:15px;
+ opacity:.5
+}
+.email__id{
+  color: black;
+  font-weight: 600;
+ margin-top:15px;
+ opacity:.5
+  
+
 }
 
 @media only screen and (max-width: 600px) {
