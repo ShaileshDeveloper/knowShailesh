@@ -20,10 +20,13 @@ function AboutMe() {
               logies and productivity .
             </p>
             <p className="about__me__sub__text">
-              I have <span style={{fontWeight:"700" , fontSize:"18px"}}>  1+ years </span> of experience in building high performance
-              websites
-              <br className="only-desktop" />
-              and web-applications . 
+              I have{" "}
+              <span style={{ fontWeight: "700", fontSize: "18px" }}>
+                {" "}
+                1+ years{" "}
+              </span>{" "}
+              of experience in building high performance websites{" "}
+              <br className="only-desktop" /> and web-applications .
             </p>
             <p className="about__me__sub__text">
               Most of the time of my day goes in exploring new technologies and
