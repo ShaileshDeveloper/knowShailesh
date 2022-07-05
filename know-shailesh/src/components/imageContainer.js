@@ -2,21 +2,23 @@ import React from "react";
 import ProfilePicture from "./profilepicture.png";
 import "./imageContainer.css";
 import { NavLink } from "react-router-dom";
+import {UseTheme} from "../utils/context"
 
 function ImageContainer() {
+  const {darkMode} = UseTheme()
   return (
     <>
-      <div className="image__text__container">
+      <div className={darkMode ? "image__text__container__dark" : "image__text__container" }>
         <div className="image__container">
           <div className="image"></div>
           <img className="image1" src={ProfilePicture} />
         </div>
         <div className="text__container">
-          <div className="heading__name">
+          <div className={darkMode ? "heading__name__dark" : "heading__name" }>
             Hey There <br className="only-phone" /> I'm Shailesh
           </div>
-          <div className="shailesh__description">
-            <p className="heading__subtext">
+          <div className= {darkMode ? "shailesh__description__dark" : "shailesh__description" }>
+            <p className=  "heading__subtext">
               I build beautiful, scalable, <br className="only-phone" /> and
               high performance
               <br /> full-stack applications.

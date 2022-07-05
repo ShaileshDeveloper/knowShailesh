@@ -5,14 +5,20 @@ import Hamburger from "./hamburger.png";
 import Cross from "./cross.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { UseTheme } from "../utils/context";
+
 function Navbar() {
   const [clicked, setClicked] = useState(false);
   let { pathname } = useLocation();
   let path = pathname.split("/")[1];
+
+  const { darkMode, setDarkMode } = UseTheme();
   return (
     <>
-      <div className="navbar__container">
-        <div className="logo__container">
+      <div
+        className={darkMode ? "navbar__container__dark" : "navbar__container"}
+      >
+        <div className={darkMode ? "logo__container__dark" : "logo__container"}>
           <img className="rectangle__icon" src={Rectangle} />
           <div
             style={{
@@ -32,9 +38,8 @@ function Navbar() {
             to="/"
           >
             <div
-              className="home__container"
+              className={darkMode ? "home__container__dark" : "home__container"}
               style={{
-                color: path === "" ? "#228be6" : "#767579",
                 fontSize: path === "" ? "1.2vw" : "1.1vw",
               }}
             >
@@ -43,9 +48,8 @@ function Navbar() {
           </Link>
           <Link style={{ textDecoration: "none" }} to="/projects">
             <div
-              className="home__container"
+              className={darkMode ? "home__container__dark" : "home__container"}
               style={{
-                color: path === "projects" ? "#228be6" : "#767579",
                 fontSize: path === "projects" ? "1.2vw" : "1.1vw",
               }}
             >
@@ -54,16 +58,22 @@ function Navbar() {
           </Link>
           <Link style={{ textDecoration: "none" }} to="/blogs">
             <div
-              className="home__container"
+              className={darkMode ? "home__container__dark" : "home__container"}
               style={{
-                color: path === "blogs" ? "#228be6" : "#767579",
                 fontSize: path === "blogs" ? "1.2vw" : "1.1vw",
               }}
             >
               BLOGS
             </div>
           </Link>
+          <button
+            style={{ position: "absolute", right: "20px" }}
+            onClick={() => setDarkMode((value) => !value)}
+          >
+            Dark Mode
+          </button>
         </div>
+
         <div className="hamburger__icon" onClick={() => setClicked(true)}>
           <img src={Hamburger} alt="menu" />
         </div>
@@ -74,7 +84,7 @@ function Navbar() {
           height: clicked ? "270px" : "0px",
           opacity: clicked ? "1" : "0",
           overflow: clicked ? "visible" : "hidden",
-          backgroundColor: "#f5f5f5"
+          backgroundColor: "#f5f5f5",
         }}
         className="mobile__navbar"
       >
@@ -89,13 +99,13 @@ function Navbar() {
           <img style={{ width: "40px", height: "40px" }} src={Cross} alt="" />
         </div>
         <div>
-          <Link style={{textDecoration:"none"}} to="/">
+          <Link style={{ textDecoration: "none" }} to="/">
             <div className="mobile__navbar__items">HOME</div>
           </Link>
-          <Link style={{textDecoration:"none"}} to="/projects">
+          <Link style={{ textDecoration: "none" }} to="/projects">
             <div className="mobile__navbar__items">PROJECTS</div>
           </Link>
-          <Link style={{textDecoration:"none"}} to="/blogs">
+          <Link style={{ textDecoration: "none" }} to="/blogs">
             <div className="mobile__navbar__items">BLOGS</div>
           </Link>
         </div>
@@ -105,30 +115,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-// function Navbar() {
-//   return (
-
-//     <div>
-//       <div class="navbar">
-//         <div class="container nav-container">
-//             <input class="checkbox" type="checkbox" name="" id="" />
-//             <div class="hamburger-lines">
-//               <span class="line line1"></span>
-//               <span class="line line2"></span>
-//               <span class="line line3"></span>
-//             </div>
-//
-//           <div class="menu-items">
-//             <li><a href="#">Home</a></li>
-//             <li><a href="#">about</a></li>
-//             <li><a href="#">blogs</a></li>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-
-//   )
-// }
-
-// export default Navbar
