@@ -5,10 +5,12 @@ import Card from "../components/card";
 import "./projects.css";
 import projectData from "./projectData";
 import Footer from "../components/Footer";
+import {UseTheme} from "../utils/context"
 function Projects() {
+  const {darkMode} = UseTheme()
   return (
     <>
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <div style={{ display: "flex", flexDirection: "column" ,backgroundColor:darkMode ? "black" :"" }}>
         <Navbar />
         <div
           style={{
@@ -16,6 +18,7 @@ function Projects() {
             display: "flex",
             alignItems: "center",
             flexDirection: "column",
+            backgroundColor:darkMode ? "black" :""
           }}
           className="card__container"
         >

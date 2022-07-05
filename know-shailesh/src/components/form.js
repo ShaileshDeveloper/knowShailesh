@@ -10,7 +10,7 @@ function Form() {
       <div className={darkMode ? "form__container__section__dark" : "form__container__section"}>
         <div className={darkMode ? "form__container__dark" : "form__container"}>
           <div>
-            <div style={{color:darkMode? "white":""}} className="hire__text">LOOKING TO HIRE .</div>
+            <div style={{color:darkMode? "#767579":""}} className="hire__text">LOOKING TO HIRE .</div>
             <div className="email__text__container">
               <a
                 className="email__link"

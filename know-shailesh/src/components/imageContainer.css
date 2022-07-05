@@ -6,6 +6,7 @@
   display: flex;
   padding-top: 10vw;
   background-color: black;
+  color:#767579
 }
 
 .image {
@@ -75,7 +76,7 @@
 .heading__name__dark {
   font-size: 3vw;
   font-weight: 600;
-  color: white;
+  color: #767579;
   font-family: "Montserrat", sans-serif;
   animation: typing 4s steps(22) infinite;
   white-space: nowrap;
@@ -99,7 +100,7 @@
 .shailesh__description__dark {
   font-size: 1.1vw;
   font-weight: 400;
-  color: white;
+  color: #767579;
 }
 
 .text{
@@ -248,7 +249,7 @@
   .heading__name__dark {
     font-size: 32px;
     font-weight: 800;
-    color: white;
+    color: #767579;
     font-family: "Montserrat", sans-serif;
     white-space: nowrap;
     width: fit-content;
