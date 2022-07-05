@@ -80,6 +80,10 @@
   color: black;
 }
 
+.text{
+  display: block;
+}
+
 .chat__button {
   background-color: #5351e0;
   color: #f0f0f0;
@@ -136,6 +140,7 @@
 .only-desktop {
   display: block;
 }
+
 
 .only-phone {
   display: none;
