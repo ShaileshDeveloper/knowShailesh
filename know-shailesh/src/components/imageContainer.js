@@ -22,7 +22,7 @@ function ImageContainer() {
               <br /> full-stack applications.
             </p>
             <p className="only-desktop subtext">
-              I am specialized in creating and designing sleek and <br />{" "}
+              I am specialized in creating and designing sleek and <br />
               premium user interfaces with help of React . 
             </p>
             <p className="only-desktop subtext">
