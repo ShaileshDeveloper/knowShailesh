@@ -6,12 +6,13 @@ import Cross from "./cross.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { UseTheme } from "../utils/context";
+import LightMode from "./lightMode.png"
+import DarkMode from "./darkMode.png"
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
   let { pathname } = useLocation();
   let path = pathname.split("/")[1];
-
   const { darkMode, setDarkMode } = UseTheme();
   return (
     <>
@@ -41,6 +42,7 @@ function Navbar() {
               className={darkMode ? "home__container__dark" : "home__container"}
               style={{
                 fontSize: path === "" ? "1.2vw" : "1.1vw",
+                color:path === "" && darkMode === false ? "#228be6" : path === "" && darkMode ? "#228be6" :""
               }}
             >
               HOME
@@ -51,6 +53,7 @@ function Navbar() {
               className={darkMode ? "home__container__dark" : "home__container"}
               style={{
                 fontSize: path === "projects" ? "1.2vw" : "1.1vw",
+                color:path === "projects" && darkMode === false ? "#228be6" : path === "projects" && darkMode ? "#228be6" :""
               }}
             >
               PROJECTS
@@ -61,6 +64,7 @@ function Navbar() {
               className={darkMode ? "home__container__dark" : "home__container"}
               style={{
                 fontSize: path === "blogs" ? "1.2vw" : "1.1vw",
+                color:path === "blogs" && darkMode === false ? "#228be6" : path === "blogs" && darkMode ? "#228be6" :""
               }}
             >
               BLOGS
@@ -69,8 +73,10 @@ function Navbar() {
           <button
             style={{ position: "absolute", right: "20px" }}
             onClick={() => setDarkMode((value) => !value)}
+            className="dark__mode__button"
+
           >
-            Dark Mode
+             <img style={{height:"28px",width:"auto"}} src={darkMode ? LightMode : DarkMode}/>
           </button>
         </div>
 
@@ -84,7 +90,8 @@ function Navbar() {
           height: clicked ? "270px" : "0px",
           opacity: clicked ? "1" : "0",
           overflow: clicked ? "visible" : "hidden",
-          backgroundColor: "#f5f5f5",
+          backgroundColor: darkMode ? "black" : "#f5f5f5",
+          
         }}
         className="mobile__navbar"
       >
@@ -111,8 +118,10 @@ function Navbar() {
           <button
             style={{ position: "absolute", right: "20px" }}
             onClick={() => setDarkMode((value) => !value)}
+            className="dark__mode__button"
           >
-            Dark Mode
+             <img style={{height:"28px",width:"auto"}} src={darkMode ? LightMode : DarkMode}/>
+           
           </button>
         </div>
       </div>

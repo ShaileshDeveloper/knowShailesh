@@ -15,10 +15,10 @@ function Footer() {
         <div className="">
           <div className="footer__name__container">
             <img className="rectangle" src={Rectangle} />
-            <div style={{color : darkMode ? "white" : "" }} className="footer__name"> Shailesh Pandey</div>
+            <div style={{color : darkMode ? "#767579" : "" }} className="footer__name"> Shailesh Pandey</div>
           </div>
 
-          <div style={{color : darkMode ? "white" : "" }}  className="footer__rights">
+          <div style={{color : darkMode ? "#767579" : "" }}  className="footer__rights">
             @2022 Shailesh Pandey. All Rights Reserved{" "}
           </div>
           <div className="icons__footer">
