@@ -1,13 +1,16 @@
 import React from "react";
 import "./form.css";
 import EmailIcon from "./comment-alt.svg";
+import EmailIconWhite from "./whiteEmail.png"
+import {UseTheme} from "../utils/context"
 function Form() {
+  const {darkMode} = UseTheme()
   return (
     <>
-      <div className="form__container__section">
-        <div className="form__container">
+      <div className={darkMode ? "form__container__section__dark" : "form__container__section"}>
+        <div className={darkMode ? "form__container__dark" : "form__container"}>
           <div>
-            <div className="hire__text">LOOKING TO HIRE .</div>
+            <div style={{color:darkMode? "white":""}} className="hire__text">LOOKING TO HIRE .</div>
             <div className="email__text__container">
               <a
                 className="email__link"
@@ -16,7 +19,7 @@ function Form() {
               >
                 Let's Connect
               </a>
-              <img className="icon__email" src={EmailIcon} />
+            {darkMode ?  <img className="icon__email__dark" src={EmailIconWhite} /> :  <img className="icon__email" src={EmailIcon} /> } 
             </div>
             <div style={{
               display:"flex",
@@ -24,8 +27,8 @@ function Form() {
               alignItems:"center",
               padding:"0px 10px"
             }}>
-              <div className="phone__number">8095117793</div>
-              <div className="email__id">shailesh.dev296@gmail.com</div>
+              <div style={{color:darkMode? "white":""}} className="phone__number">8095117793</div>
+              <div style={{color:darkMode? "white":""}} className="email__id">shailesh.dev296@gmail.com</div>
             </div>
           </div>
         </div>

@@ -6,9 +6,24 @@
   font-weight: 500;
   height: 6vw;
 }
+.navbar__container__dark {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  font-weight: 500;
+  height: 6vw;
+}
 .logo__container {
   font-family: "Montserrat", sans-serif;
   color: #767579;
+  display: flex;
+  font-size: 1.3vw;
+  font-weight: 800;
+}
+.logo__container__dark {
+  font-family: "Montserrat", sans-serif;
+  color: white;
   display: flex;
   font-size: 1.3vw;
   font-weight: 800;
@@ -29,6 +44,12 @@
 
 .home__container {
   color: #767579;
+  font-size: 1.1vw;
+  cursor: pointer;
+  transition: .2s;
+}
+.home__container__dark {
+  color: white;
   font-size: 1.1vw;
   cursor: pointer;
   transition: .2s;
@@ -61,7 +82,16 @@
     width: 100vw;
     height: 15vw;
   }
+  .navbar__container__dark {
+    width: 100vw;
+    height: 15vw;
+  }
   .logo__container {
+    font-size: 5vw;
+    position: relative;
+    right: 10%;
+  }
+  .logo__container__dark {
     font-size: 5vw;
     position: relative;
     right: 10%;

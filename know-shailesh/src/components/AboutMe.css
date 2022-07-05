@@ -1,9 +1,17 @@
 .about__me__details {
   height: fit-content;
   width: 100%;
-  margin-top: 10vw;
+  margin-top: 2vw;
   display: flex;
   padding: 50px 0px;
+}
+.about__me__details__dark {
+  height: fit-content;
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  padding: 50px 0px;
+  background-color: black;
 }
 .about__me__text__container {
   flex-basis: 50%;
@@ -71,6 +79,14 @@
     background-color: #f5f5f5;
     padding: 20px 25px;
     border-radius: 15px;
+  }
+  .about__me__sub__text__dark {
+    font-weight: 400;
+    font-size: 16px;
+    background-color: black;
+    padding: 20px 25px;
+    border-radius: 15px;
+    border: 1px solid gray;
   }
   .about__me__details {
     height: fit-content;

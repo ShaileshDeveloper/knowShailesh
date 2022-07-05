@@ -2,6 +2,11 @@
   display: flex;
   padding-top: 10vw;
 }
+.image__text__container__dark {
+  display: flex;
+  padding-top: 10vw;
+  background-color: black;
+}
 
 .image {
   height: 22.5vw;
@@ -67,6 +72,18 @@
   position: relative;
   transition: 5s ease;
 }
+.heading__name__dark {
+  font-size: 3vw;
+  font-weight: 600;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  animation: typing 4s steps(22) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 24ch;
+  position: relative;
+  transition: 5s ease;
+}
 
 @keyframes typing {
   from {
@@ -78,6 +95,11 @@
   font-size: 1.1vw;
   font-weight: 400;
   color: black;
+}
+.shailesh__description__dark {
+  font-size: 1.1vw;
+  font-weight: 400;
+  color: white;
 }
 
 .text{
@@ -151,6 +173,10 @@
     flex-direction: column-reverse;
     padding-top: 0px;
   }
+  .image__text__container__dark {
+    flex-direction: column-reverse;
+    padding-top: 0px;
+  }
   .only-desktop {
     display: none;
   }
@@ -185,6 +211,7 @@
     overflow: hidden;
     animation: typing 3s;
   }
+  
 
   .image {
     height: auto;
@@ -210,6 +237,18 @@
     font-size: 32px;
     font-weight: 800;
     color: black;
+    font-family: "Montserrat", sans-serif;
+    white-space: nowrap;
+    width: fit-content;
+    position: relative;
+    animation: none;
+    padding-left: 40px;
+    transition: none;
+  }
+  .heading__name__dark {
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
     font-family: "Montserrat", sans-serif;
     white-space: nowrap;
     width: fit-content;
