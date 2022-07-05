@@ -21,7 +21,7 @@ function Projects() {
         >
           {projectData.reverse().map((item) => (
             <>
-              <Card item={item} />
+              <Card item={item} blogs={false} />
             </>
           ))}
         </div>
