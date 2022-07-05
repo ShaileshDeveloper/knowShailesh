@@ -108,6 +108,12 @@ function Navbar() {
           <Link style={{ textDecoration: "none" }} to="/blogs">
             <div className="mobile__navbar__items">BLOGS</div>
           </Link>
+          <button
+            style={{ position: "absolute", right: "20px" }}
+            onClick={() => setDarkMode((value) => !value)}
+          >
+            Dark Mode
+          </button>
         </div>
       </div>
     </>
