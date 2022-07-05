@@ -17,15 +17,16 @@ function ImageContainer() {
           </div>
           <div className="shailesh__description">
             <p className="heading__subtext">
-              I build beautiful and scalable <br className="only-phone" /> full
-              stack applications.
+              I build beautiful, scalable, <br className="only-phone" />
+              <span className="only-desktop"> and high performance</span>
+              <br className="only-desktop"/> full-stack applications.
             </p>
             <p className="only-desktop subtext">
-              I am a web-developer,skilled in designing responsive <br /> and
-              scalable web-applications .
+              I am specialized in creating and designing sleek and <br />{" "}
+              premium user interfaces with help of React .
             </p>
             <p className="only-desktop subtext">
-              I write blogs around web-technologies.
+              Read my blogs around web-technologies.
             </p>
           </div>
           <div className="button__container">
@@ -36,7 +37,7 @@ function ImageContainer() {
             >
               <button className="chat__button">LET'S CHAT</button>
             </a>
-            <NavLink style={{textDecoration:"none"}} to="/projects">
+            <NavLink style={{ textDecoration: "none" }} to="/projects">
               <button className="about__button">SEE PROJECTS</button>
             </NavLink>
           </div>
